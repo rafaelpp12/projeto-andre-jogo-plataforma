@@ -6,8 +6,9 @@ TagManager:
   tags:
   - Espinho
   - chao
-  - QuicaCima
-  - QuicaLado
+  - CheckPoint
+  - PontoFinal
+  - tiro
   layers:
   - Default
   - TransparentFX

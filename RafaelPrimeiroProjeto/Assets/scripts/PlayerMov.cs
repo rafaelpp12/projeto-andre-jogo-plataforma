@@ -39,8 +39,23 @@ public class PlayerMOV : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Espinho"))
         {
-            Manager.ColocarPlayerPosicaoInicial();
+            Manager.AtualizarMortePlayer();
             
+        }
+        if (collision.gameObject.CompareTag("CheckPoint"))
+        {
+            Manager.posicaoPlayerInicial = collision.gameObject.transform.position;
+
+        }
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("PontoFinal"))
+        {
+            Manager.passarDeFase();
+
         }
     }
 }

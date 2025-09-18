@@ -31,6 +31,8 @@ public class InimigoMOV : MonoBehaviour
         {
             velocidadeY = velocidadeY * -1;
         }    
+       
+
 
     }
 }
